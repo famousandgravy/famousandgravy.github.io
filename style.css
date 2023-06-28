@@ -1,0 +1,231 @@
+body{
+    margin: 0px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, sans-serif; 
+    font-size: 40px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 500; 
+    line-height: 26.4px;
+}
+
+@media only screen and (max-width: 620px) {
+/* For mobile phones: */
+    body {
+        width: 100%;
+        height: 100vh; /* Use vh as a fallback for browsers that do not support Custom Properties */
+        height: calc(var(--vh, 1vh) * 100);
+    }
+
+    #banner{
+        height: 10vh;
+        height: calc(var(--vh, 1vh) * 10);
+    }
+
+    #top{
+        height: 20vh;
+        height: calc(var(--vh, 1vh) * 20);
+        line-height: 28px;
+    }
+
+    #middle{
+        height: 40vh;
+        height: calc(var(--vh, 1vh) * 40);
+    }
+
+    #button{
+        height: 15vh;
+        height: calc(var(--vh, 1vh) * 15);
+    }
+
+    #bottom{
+        height: 10vh;
+        height: calc(var(--vh, 1vh) * 10);
+    }
+
+    #sidebar{
+        position:absolute;
+        height: 100%;
+        top:0;
+        left:0;
+    }
+
+    #button button img{
+        width: 55vw !important;
+    }
+    
+    #banner button img{
+        width: 55vw !important;
+    }
+
+    #middle button img{
+        width: 35vw !important;
+    }
+
+    p{
+        text-align: left; 
+        margin-left: 15px; 
+        margin-right: 15px;
+        font-size: 25px;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    p i{
+        text-align: left; 
+        font-size: 30px;
+    }
+
+    #overlay{
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 621px) {
+    #qBanner{ 
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    #home{
+        width: 650px;
+    }
+}
+
+#banner{
+    height: 10vh;
+}
+
+#top{
+    height: 20vh;
+    height: calc(var(--vh, 1vh) * 20);
+    margin-top: 30px;
+}
+
+#button{
+    height: 15vh;
+    margin: auto;
+}
+
+#button button img{
+    width: 256px;
+}
+
+#banner button img{
+    width: 256px;
+}
+
+#middle button img{
+    width: 160px;
+}
+
+#overlay{
+    position:absolute;
+    height: 25%;
+    top:0;
+    left:auto;
+}
+
+#sidebar{
+    position:absolute;
+    height: 100%;
+    top:0;
+    left:auto;
+}
+
+#q{
+    padding-top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+#top h1{
+    font-size: 60px;
+    font-weight: 600;
+}
+
+#middle{
+    text-align: center;
+    height: 40vh;
+    display: inline-block;
+    margin-top: 30px;
+}
+
+#middle button{
+    margin-top: 10%;
+    text-align: center;
+    display: inline-block;
+    
+}
+
+#middle span{
+    margin-right: 35px;
+}
+
+button{
+    background-color: #ffffff;
+    border: none; 
+    border-radius: 43.5px;
+    text-align: center;
+}
+
+button img{
+    border-radius: 43.5px;
+    filter:drop-shadow(0px 4px 4px #a0a0a0);
+}
+
+button img:hover{
+    filter: none;
+}
+
+#bottom{
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    height: 10vh;
+}
+
+span{
+    font-size: 30px;
+}
+
+table{
+    width: 98%;
+    margin: 8px;
+    font-size: 16px;
+    text-align: left;
+}
+
+a:link{
+    color: #82C6E8;
+}
+
+a:visited{
+    color: #82C6E8; 
+}
+
+@keyframes transition{
+    100%{
+        transform: scaleY(100);
+        opacity: 0;
+    }
+}
+
+p{
+    text-align: left; 
+    margin-left: 50px; 
+    margin-right: 50px;
+    font-size: 25px;
+    height: fit-content;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+p i{
+    text-align: left; 
+    font-size: 30px;
+}
