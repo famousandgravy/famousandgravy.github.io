@@ -29,9 +29,9 @@ function home(){
         readTxtDoc();
         blank();
         //filler for margins on desktop
-        document.getElementById("overlay").innerHTML=`<div style='position: relative; float: left; width: 30vw; z-index: -3; height: ${h}px; background-color: #242424;'></div><div style='position: relative; margin-left: 70vw; width: 30vw; z-index: -3; height: ${h}px; background-color: #00C027;'></div>`;
+        document.getElementById("overlay").innerHTML=`<div style='position: relative; float: left; width: 50vw; z-index: -3; height: ${h}px; background-color: #242424;'></div><div style='position: relative; margin-left: 50vw; width: 50vw; z-index: -3; height: ${h}px; background-color: #00C027;'></div>`;
         //homepage banner
-        document.getElementById("banner").innerHTML = "<img id='home' style='position: relative; z-index: 3;' src='./images/home.svg' alt='Dead or Alive from Famous and Gravy'>";
+        document.getElementById("banner").innerHTML = "<a href='https://www.famousandgravy.com/' target='_blank'><img id='home' style='position: relative; z-index: 3;' src='./images/home.svg' alt='Dead or Alive from Famous and Gravy and link to Famous and Gravy page'></a>";
         //play button
         document.getElementById("button").innerHTML = "<button onclick='generateQ(0)'><img src='./images/play.svg' alt='play button'></button>";
     }else{
@@ -57,7 +57,7 @@ function generateQ(qNum){
         <i>${who}</i><img style='width: 20px; margin: 5px;' src='./images/plus.svg' alt='hint'>
         </p></div`; */
         document.getElementById("button").innerHTML = `
-        <button onclick='hint(${qNum},0);'><img src='./images/hint.svg' alt='continue button'></button>
+        <button style="transform: translateY(-70px);" onclick='hint(${qNum},0);'><img style="border: 2px solid black;" src='./images/hint.svg' alt='hint button'></button>
         `
     }
 }

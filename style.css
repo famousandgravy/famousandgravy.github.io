@@ -11,6 +11,18 @@ body{
     line-height: 26.4px;
 }
 
+@media only screen and (max-width: 400px) {
+    #button button img{
+        width: 45vw !important;
+    }
+    table{
+        width: 80%;
+        margin: 6px;
+        font-size: 12px;
+        text-align: left;
+    }
+}
+
 @media only screen and (max-width: 620px) {
 /* For mobile phones: */
     body {
