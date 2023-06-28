@@ -57,7 +57,7 @@ function generateQ(qNum){
         <i>${who}</i><img style='width: 20px; margin: 5px;' src='./images/plus.svg' alt='hint'>
         </p></div`; */
         document.getElementById("button").innerHTML = `
-        <button style="transform: translateY(-70px);" onclick='hint(${qNum},0);'><img style="border: 2px solid black;" src='images/hint.svg' alt='hint button'></button>
+        <button style="transform: translateY(-70px);" onclick='hint(${qNum},0);'><img style="border: 2px solid black;" src='./images/hint.svg' alt='hint button'></button>
         `
     }
 }
